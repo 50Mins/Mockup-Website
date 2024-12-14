@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #334226;
+    color: #e9e9e9;
+}
+
+a {
+    text-decoration: none;
+    color: #e9e9e9;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Navigation: [ABOUT ME], [MY SKILLSET], [GET IN TOUCH] Jumps */
+header {
+    letter-spacing: 0.05em;
+    background-color: #334226;
+    color: #e9e9e9;
+    display: flex;
+    padding: 10px 20px;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+
+header img {
+    width: 400px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+header nav {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+
+header nav ul li {
+    margin: 0 40px;
+}
+
+#carousel {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    display: none;
+}
+
+.carousel-slide img.active {
+    display: block;
+}
+
+.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* About Section */
+#about {
+    position: relative;
+    padding: 0px 100px;
+    text-align: center;
+    background-color: #e9e9e9;
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+/* Wrapper for the About text with rounded corners and background */
+.about-text {
+    background-color: #588764;
+    border-radius: 36px;
+    padding: 30px;
+    max-height: 100%;
+    max-width: 800px;
+    margin: 20px;
+    z-index: 2;
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+/*About Me Header*/
+#about h1 {
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/*About Me Paragraph*/
+#about p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Skills Section */
+#OurStaff {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #bbbbbb;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/*1st section text: Coding Languages*/
+.Staff1 {
+    background-color: #588764;
+    border-radius: 36px;
+    max-width: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+/*2nd section text: 3D Modelling*/
+.Staff2 {
+    background-color: #588764;
+    border-radius: 36px;
+    max-width: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+/*3rd section text: Graphic/UI Design*/
+.Staff3 {
+    background-color: #588764;
+    border-radius: 36px;
+    max-width: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+/*Main Header: 'My Skillset'*/
+#OurStaff h1 {
+    background-color: #588764;
+    border-radius: 36px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #e9e9e9;
+}
+
+/* Sub headers: 'Coding Languages', '3D Modelling*/
+#OurStaff h2 {
+    letter-spacing: 0.05em;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* packages Section */
+#Pricing {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background-color: #e9e9e9;
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* package Section Text Styling */
+.package1, .package2, .package3 {
+    margin: 20px 0;
+    padding: 25px;
+    background-color: #588764;
+    border-radius: 36px;
+    max-width: 800px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Package Description */
+.package-description {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #e9e9e9;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.package1:hover, .package2:hover, .package3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Header: 'Completed packages' */
+#Pricing h1 {
+    background-color: #588764;
+    border-radius: 36px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #e9e9e9;
+}
+
+/* Subheaders for packages */
+#Pricing h2 {
+    letter-spacing: 0.03em;
+    font-size: 2em;
+    text-align: center;
+    color: #e9e9e9;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #588764;
+    text-align: center;
+}
+
+#contact h1 {
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    text-align: center;
+}
+
+/* Contact Form Styling */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    font-size: 1.2em;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    height: 150%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contactForm textarea {
+    height: 150px;
+}
+
+#contactForm button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #005bb5;
+}
+
+#contact a {
+    text-align: center;
+    color: #0084ff;
+}
+
+#scrollbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e9e9e9;
+    color: white;
+    padding: 0;
+    border: 2px solid #334226;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 50;
+}
+
+#scrollbutton img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: rgba(51, 66, 38, 0.5); /* 0.5 is 50% transparency */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #carousel {
+        height: 300px;
+    }
+
+    .carousel-container, .carousel-slide {
+        height: 300px;
+    }
+
+    #about {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        min-height: auto;
+    }
+
+    .about-text {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    #skillset, #Pricing {
+        padding: 20px;
+    }
+
+    #skillset h1, #Pricing h1 {
+        font-size: 3em;
+    }
+
+    #skillset h2, #Pricing h2 {
+        font-size: 1.5em;
+    }
+
+    #contactForm {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #contactForm input, #contactForm textarea {
+        width: 100%;
+    }
+
+    .package1, .package2, .package3 {
+        padding: 15px;
+    }
+
+    .package-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
