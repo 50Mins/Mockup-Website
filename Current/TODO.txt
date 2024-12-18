@@ -1,3 +1,0 @@
-TO DO:
-
--- Make nav bar mobile accessible
