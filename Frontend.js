@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create scroll-to-top button
     let ReScroll = document.createElement('button');
     let img = document.createElement('img');
-    img.src = 'GuiElements/Arrow.png';
+    img.src = 'Arrow.png';
     img.alt = 'Scroll to top';
     img.style.width = '30px';
     img.style.height = '30px';
