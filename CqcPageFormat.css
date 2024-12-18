@@ -269,36 +269,22 @@ footer {
         margin: 10px 0;
     }
 
-    #carousel {
-        height: 300px;
+    #landing-image {
+        height: 200px;
     }
 
-    .carousel-container, .carousel-slide {
-        height: 300px;
+    .image-container {
+        height: 200px;
     }
 
-    #about {
+    #ratings {
+        padding: 20px;
         flex-direction: column;
-        padding: 20px;
-        height: auto;
-        min-height: auto;
     }
 
-    .about-text {
-        max-width: 100%;
+    .ratings-container, .ratings-text1, .ratings-text2, .ratings-text3 {
+        min-width: 100%;
         margin: 10px 0;
-    }
-
-    #skillset, #Pricing {
-        padding: 20px;
-    }
-
-    #skillset h1, #Pricing h1 {
-        font-size: 3em;
-    }
-
-    #skillset h2, #Pricing h2 {
-        font-size: 1.5em;
     }
 
     #contactForm {
@@ -308,14 +294,5 @@ footer {
 
     #contactForm input, #contactForm textarea {
         width: 100%;
-    }
-
-    .package1, .package2, .package3 {
-        padding: 15px;
-    }
-
-    .package-button {
-        font-size: 1em;
-        padding: 8px 16px;
     }
 }
